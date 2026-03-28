@@ -1,7 +1,4 @@
-# print("hello sakshi")
 def chatbot():
-    print("Chatbot: Hello! Type 'bye' to exit.")
-
     while True:
         user = input("you: ").lower()
 
@@ -9,11 +6,16 @@ def chatbot():
             print("Chatbot: Hi!")
 
         elif user == "how are you":
-            print("Chatbot: I'm fine,thanks!")
+            print("Chatbot: I'm fine, thanks!")
 
         elif user == "what is your name":
             print("Chatbot: I am a simple chatbot.")
 
         elif user == "bye":
-            print("Chatbot: Sorry,I don't understand.")
+            print("Chatbot: Goodbye!")
+            break   # loop stop karega
+
+        else:
+            print("Chatbot: Sorry, I don't understand.")
+            
 chatbot()
